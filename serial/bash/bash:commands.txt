@@ -1,0 +1,19 @@
+# ESP32 LED Serial Control via Bash Terminal
+
+# Step 1: List available serial ports (for linux: ls /dev/ttyUSB*) (windows: use device manger or # mode)
+
+ls /dev/tty.*
+
+# Step 2: Connect to ESP32 using screen
+
+screen /dev/tty.usbserial-1410 115200
+
+# Step 3: Type the following commands into terminal:
+
+on     → Turns the LED ON
+off    → Turns the LED OFF
+abc    → Returns 'Invalid command'
+
+# To exit screen session:
+
+Ctrl + A → then K → then Y
