@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Tue Sep 16 14:34:57 2025
 
-@author: demittria
+@author: demi
 """
 import tkinter as tk
 import serial 

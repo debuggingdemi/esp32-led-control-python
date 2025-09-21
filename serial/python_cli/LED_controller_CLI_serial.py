@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sun Sep 14 14:54:08 2025
 
-@author: demittria
+
+@author: demi
 """
 import serial
 import time    # if you want to add delays

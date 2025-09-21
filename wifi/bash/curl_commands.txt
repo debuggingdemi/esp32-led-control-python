@@ -1,0 +1,22 @@
+# Notes for different operating systems:
+
+# On macOS and Linux:
+# curl is already available in the terminal.
+
+# On Windows:
+# You can:
+# - Use Windows PowerShell (curl is aliased to Invoke-WebRequest)
+#     Example: iwr http://192.168.20.78/on
+
+
+# ESP32 LED Web Server (HTTP)
+# Replace the IP address with the one shown in your Serial Monitor
+
+# View HTML Web Page
+curl http://<MCU IP adress>/
+
+# Turn LED ON
+curl http://<MCU IP adress>/on
+
+# Turn LED OFF
+curl http://<MCU IP adress>/off

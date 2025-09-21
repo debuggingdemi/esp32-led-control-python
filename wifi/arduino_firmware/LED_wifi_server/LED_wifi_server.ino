@@ -2,8 +2,8 @@
 
 #define LED_PIN LED_BUILTIN
 
-const char* ssid = "Wi-fi-4C"; // your wifi name (NOTE: see what GHz your MCU, eg. 2.4GHz or 5GHz)
-const char* password = "10486239"; // your wifi password
+const char* ssid = "your wifi name"; // your wifi name (NOTE: see what GHz your MCU, eg. 2.4GHz or 5GHz)
+const char* password = "your wifi password"; // your wifi password
 
 WiFiServer server(80); // define web server/local IP address for ESP32 on port 80 (HTTP port)
 
@@ -28,38 +28,6 @@ void setup() {
 server.begin(); // starts server once Wifi conection is established 
 
 }
-
-/*void loop() {
-  // put your main code here, to run repeatedly:
-  WiFiClient client = server.available();
-  if(client) {
-    Serial.println("Client connected");
-
-        // Wait until client sends data
-    while (!client.available()) {
-      delay(1);
-    }
-
-    // Read HTTP request line
-    String request = client.readStringUntil('\r');
-    Serial.println("Request: " + request);
-    client.flush();  // Clear buffer
-
-    // Send minimal valid HTTP response
-    client.println("HTTP/1.1 200 OK");
-    client.println("Content-Type: text/html");
-    client.println("Connection: close");
-    client.println();  // Required blank line before body
-    client.println("<!DOCTYPE HTML><html>");
-    client.println("<h1>Hello Miss Demi</h1>");
-    client.println("</html>");
-
-    // Close the connection
-    client.stop();
-    Serial.println("Client disconnected");
-  }
-
-}*/
 
 void loop() {
   WiFiClient client = server.available();  // Check if a client is connected
